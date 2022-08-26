@@ -4,7 +4,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>My Portfolio</title>
   </head>
-  <body><h1>my Portfolio</h1></body>
+  <body>
+    <header>
+      <div class="hamburger-manu">
+        <i class="fas fa-bars">
+          <ul class="manu">
+            <li><a href="home">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </i>
+      </div>
+      <div><img src="/images/Logo.png" alt="logo" /></div>
+      <nav>
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Skill</a></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">FRA</a></li>
+          <li><a href="#">DEU</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div>
+        <p class="hello"><i class="fa-solid fa-hand-wave"></i>Hey there</p>
+        <h1>I'm <span>Francis</span> Hoffmann</h1>
+        <p>
+          I will help you achieve your goals with my wide range of professional
+          services. Whether you need WEB Development, MUSIC Production or VIDEO
+          Production
+          <span>- I got you covered!</span>
+        </p>
+        <button>Download CV</button>
+        <div class="socials">
+          <ol>
+            <li>
+              <a href="https://github.com/dewanstudios"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/francis-hoffmann-b852b8180/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.xing.com/profile/Francis_Hoffmann3/cv"
+                ><i class="fab fa-xing-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCP46hlgP_oRTC9DyL-gIuaw"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ntiamoah111/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="profile-picture">
+        <img src="/images/my-profile-picture1.svg" alt="profile-picture" />
+      </div>
+    </main>
+    <section>
+      <div><img src="/images/about.png" alt="about" /></div>
+      <div>
+        <h2>ABOUT ME</h2>
+        <p id="aboutme">
+          I am a full stack web developer, music producer, and also film and
+          edit videos from music videos to weddings and more. I have study a
+          full 1 year 2 months course in web development with Digital Career
+          Institute base in Germany. I have a deep background in web development
+          with over 2 years of experience building large-scale websites. I have
+          excellent problem solving skills and work well in high pressure
+          environments.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <article>
+        <div>
+          <h3>My Projects</h3>
+          <a class="myprojects" href="https://www.afrobeatsleads.com/"
+            >Afrobeatsleads <i class="fas fa-external-link"></i
+          ></a>
+          <div>
+            <a
+              class="myprojects"
+              href="https://fbw-e05-b.github.io/first-github-deploy/"
+              >TheSpeakerShop <i class="fas fa-external-link"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3>Let Work Together</h3>
+          <p><i class="fa-solid fa-at"></i> Info@dewanstudios.com</p>
+          <p><i class="fa-brands fa-square-whatsapp"></i> 00491607914528</p>
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i> Del banco kehr 2</p>
+            <p>21035 Hamburg</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-3 pt-1">
+            <input
+              type="email"
+              class="form-control border-0 border-top border-primary"
+              id="exampleFormControlInput1"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control border-0 border-top border-primary"
+              id="exampleFormControlTextarea1"
+              rows="2"
+              placeholder="Write Me Message"
+            ></textarea>
+            <div class="col-auto pt-4">
+              <button type="submit" class="btn btn-primary mb-3 text-white">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="gridpattern">
+        <p class="text-muted ms-4 ps-4">DewanStudios &copy; Copyright 2022</p>
+        <a href="home"><i class="fas fa-hand-point-up"></i>Go top</a>
+      </div>
+    </footer>
+  </body>
 </html>

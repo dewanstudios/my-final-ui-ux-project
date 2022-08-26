@@ -4,6 +4,339 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+$color: #f9d18a;
+$font-family: "Oswald", sans-serif;
+$bg: #b6b6c2;
+header {
+  display: flex;
+  justify-content: space-around;
+  // background-color: $bg;
+  align-items: center;
+  padding-top: 1rem;
+
+  .hamburger-manu {
+    display: none;
+    .manu {
+      display: none;
+    }
+  }
+
+  div {
+    img {
+      width: 5.5rem;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+
+      li {
+        list-style-type: none;
+        margin-left: 4rem;
+        font-family: $font-family;
+        a {
+          text-decoration: none;
+          color: $bg;
+          &:hover {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+  div {
+    ul {
+      display: flex;
+      font-size: 0.8rem;
+
+      li {
+        list-style-type: none;
+        margin-left: 1rem;
+        font-family: $font-family;
+        a {
+          text-decoration: none;
+          color: $bg;
+          &:hover {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+  .profile-picture {
+    img {
+      width: 31rem;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // padding-left: 3rem;
+
+    .hello {
+      padding-top: 10rem;
+
+      &::before {
+        font-family: "Font Awesome 5 free";
+        content: "\f256";
+        padding: 1rem;
+        color: $color;
+      }
+    }
+    p {
+      font-size: larger;
+      font-family: $font-family;
+      color: #9c9ca3;
+      span {
+        font-weight: bolder;
+      }
+    }
+    h1 {
+      font-weight: bolder;
+      font-size: 4rem;
+      font-family: $font-family;
+      color: #b6b6c4;
+      span {
+        color: $color;
+      }
+    }
+  }
+  button {
+    background-color: $color;
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2.5rem;
+    color: whitesmoke;
+    border-radius: 1px;
+    width: fit-content;
+    font-family: $font-family;
+  }
+  div {
+    ol {
+      display: flex;
+      padding-top: 7.5rem;
+
+      li {
+        list-style-type: none;
+        margin-left: 1.5rem;
+      }
+    }
+    a {
+      font-size: 2rem;
+      margin-top: 7rem;
+      color: $bg;
+
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
+
+section {
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 0;
+
+  div {
+    img {
+      width: 28rem;
+      border: 0;
+    }
+  }
+  div {
+    padding: 2rem;
+    padding-top: 0;
+
+    p {
+      font-size: larger;
+      font-family: $font-family;
+      color: #54545a;
+      padding: 1rem;
+    }
+    h2 {
+      font-weight: bolder;
+      font-size: 2rem;
+      font-family: $font-family;
+      color: whitesmoke;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  article {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .gridpattern {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  div {
+    h3 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-family: $font-family;
+    }
+    p {
+      margin-bottom: 0;
+      font-family: $font-family;
+    }
+    a {
+      font-size: 1.5rem;
+      color: $color;
+      text-decoration: none;
+      font-family: $font-family;
+    }
+    .myprojects {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 745px) and (max-width: 1311px) {
+  header {
+    nav {
+      ul {
+        li {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    padding-left: 2%;
+    .profile-picture {
+      img {
+        width: 25rem;
+      }
+    }
+    div {
+      ol {
+        padding-top: 2.5rem;
+      }
+      .hello {
+        padding-top: 3.5rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+  section {
+    padding: 0;
+
+    div {
+      padding: 0;
+      p {
+        padding: 0;
+        padding-right: 0.8rem;
+      }
+      img {
+        width: 18rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 373px) and (max-width: 745px) {
+  header {
+    nav {
+      display: none;
+    }
+    .hamburger-manu {
+      display: block;
+      font-size: 3rem;
+      color: $bg;
+    }
+    div {
+      ul {
+        padding-top: 1.5rem;
+
+        li {
+          margin-left: 0.4rem;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    padding-left: 2%;
+    background-image: url(/images/my-profile-picture1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    div {
+      ol {
+        padding-top: 2.5rem;
+      }
+      .hello {
+        padding-top: 3.5rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+    }
+    .profile-picture {
+      img {
+        display: none;
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    background-image: url(/images/about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    div {
+      padding: 1rem;
+      margin: auto;
+      p {
+        padding: 1rem;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+  footer {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      margin: auto;
+      padding-left: 2rem;
+    }
+    .gridpattern {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
 }
