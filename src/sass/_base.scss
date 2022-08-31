@@ -1,11 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 $color: #f9d18a;
-$font-family: "Oswald", sans-serif;
+$font-family: "Roboto", sans-serif;
 $bg: #54545a;
 header {
   display: flex;
@@ -72,6 +71,7 @@ main {
   display: flex;
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 
   .profile-picture {
     img {
@@ -97,7 +97,7 @@ main {
     p {
       font-size: larger;
       font-family: $font-family;
-      color:$bg;
+      color: $bg;
       span {
         font-weight: bolder;
       }
@@ -108,7 +108,7 @@ main {
       font-family: $font-family;
       color: $bg;
       span {
-        color:$color;
+        color: $color;
       }
     }
   }
@@ -150,6 +150,8 @@ section {
   align-items: center;
   padding: 5rem;
   padding-bottom: 0;
+  height: 100vh;
+  margin-bottom: 3rem;
 
   div {
     img {
@@ -164,7 +166,7 @@ section {
     p {
       font-size: larger;
       font-family: $font-family;
-      color:$bg;
+      color: $bg;
       padding: 1rem;
     }
     h2 {
@@ -208,164 +210,6 @@ footer {
     }
     .myprojects {
       font-size: 1rem;
-    }
-  }
-}
-
-@media (min-width: 745px) and (max-width: 1311px) {
-  header {
-    nav {
-      ul {
-        li {
-          margin-left: 1.5rem;
-        }
-      }
-    }
-  }
-  main {
-    width: 100%;
-    padding-left: 2%;
-    .profile-picture {
-      img {
-        width: 25rem;
-      }
-    }
-    div {
-      ol {
-        padding-top: 2.5rem;
-      }
-      .hello {
-        padding-top: 3.5rem;
-      }
-    }
-    button {
-      margin-top: 1rem;
-    }
-  }
-  section {
-    padding: 0;
-
-    div {
-      padding: 0;
-      p {
-        padding: 0;
-        padding-right: 0.8rem;
-      }
-      img {
-        width: 18rem;
-      }
-    }
-  }
-}
-
-@media (min-width: 373px) and (max-width: 745px) {
-  header {
-    nav {
-      display: none;
-    }
-    .hamburger-manu {
-      display: block;
-      font-size: 2.5rem;
-      color: $bg;
-      position: relative;
-      
-      &:hover{
-        color: $color;
-      }
-
-    &:active .manu{
-        display: block;
-        position: absolute;
-        background-color: #b6b6c2c7;
-        
-
-        li{
-          padding-bottom: 1rem;
-          font-size: 1.5rem;
-          border-bottom: #f9d18a 1px double;
-          padding-right: 5rem;
-        }
-        
-      }
-    }
-    div {
-      ul {
-        padding-top: 1.5rem;
-
-        li {
-          margin-left: 0.4rem;
-        }
-      }
-    }
-  }
-  main {
-    width: 100%;
-    padding-left: 2%;
-    background-image: url(/images/my-profile-picture1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    div {
-
-      ol {
-        padding-top: 2.5rem;
-        li{
-          a{
-            color: whitesmoke;
-          }
-        }
-      }
-      .hello {
-        padding-top: 3.5rem;
-      }
-    }
-    button {
-      margin-top: 1rem;
-    }
-    .profile-picture {
-      img {
-        display: none;
-      }
-    }
-  }
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    background-image: url(/images/about.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    div {
-      padding: 1rem;
-      margin: auto;
-      p {
-        padding: 1rem;
-        color: rgb(27, 25, 25);
-      }
-      img {
-        display: none;
-      }
-    }
-  }
-  footer {
-    // display: flex;
-    // flex-wrap: wrap;
-
-    article {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      width: 100%;
-      margin: auto;
-      padding-left: 2rem;
-    }
-    .gridpattern {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
     }
   }
 }

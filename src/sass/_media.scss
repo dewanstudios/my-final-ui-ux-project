@@ -1,0 +1,190 @@
+@media (min-width: 745px) and (max-width: 1311px) {
+  header {
+    nav {
+      ul {
+        li {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    padding-left: 2%;
+    .profile-picture {
+      img {
+        width: 25rem;
+      }
+    }
+    div {
+      ol {
+        padding-top: 2.5rem;
+      }
+      .hello {
+        padding-top: 3.5rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+  section {
+    padding: 0;
+
+    div {
+      padding: 0;
+      p {
+        padding: 0;
+        padding-right: 0.8rem;
+      }
+      img {
+        width: 18rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 745px) {
+  header {
+    position: relative;
+    flex-direction: row-reverse;
+
+    ul {
+      padding-left: 0;
+    }
+    nav {
+      display: none;
+    }
+    .hamburger-manu {
+      display: block;
+      font-size: 2.1rem;
+      color: $bg;
+
+      &:hover {
+        color: $color;
+      }
+
+      &:hover .manu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+        position: absolute;
+        background-color: white;
+
+        width: 100vw;
+
+        left: 0;
+
+        li {
+          padding-bottom: 1rem;
+          font-size: 1.5rem;
+          border-bottom: #f9d18a 1px double;
+          padding-right: 0;
+
+          // width: 100%;
+        }
+      }
+    }
+    div {
+      ul {
+        padding-top: 1.5rem;
+
+        li {
+          margin-left: 0.4rem;
+        }
+      }
+    }
+  }
+  main {
+    background-color: #888585d5;
+    width: 100%;
+    padding-left: 2%;
+    background-image: url(/images/my-profile-picture1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    div {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      ol {
+        padding-top: 2rem;
+        padding-left: 3.5rem;
+        li {
+          a {
+            color: whitesmoke;
+          }
+        }
+      }
+      .hello {
+        padding-top: 3.5rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+    }
+    .profile-picture {
+      img {
+        display: none;
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    background-image: url(/images/about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    div {
+      padding: 1rem;
+      margin: auto;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        padding: 1rem;
+        color: rgb(27, 25, 25);
+        background-color: rgba(245, 245, 245, 0.439);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+  footer {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      margin: auto;
+      padding-left: 2rem;
+
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.5rem;
+      }
+    }
+    .gridpattern {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+}
